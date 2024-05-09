@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Processing</title>
+</head>
+<body>
+
+<h2>Sample Form</h2>
+
+<form id="myForm">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br><br>
+  <button type="button" onclick="processForm()">Submit</button>
+</form>
+
+<p id="result"></p>
+
+<script>
+function processForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  
+  // Do something with the form data
+  document.getElementById("result").innerHTML = "Name: " + name + "<br>Email: " + email;
+}
+</script>
+
+</body>
+</html>
